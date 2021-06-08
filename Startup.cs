@@ -41,7 +41,7 @@ namespace PolicyBasedAuth
                      .Requirements.Add(new HRManagerProbationRequirement(3)));
                 //options.AddPolicy("HRDepartment", policy => policy
                 //     .RequireClaim("Manager")
-                //     .RequireClaim("Assistant"));
+                //     .RequireClaim("Assistant"));\ggg
             });
             services.AddSingleton<IAuthorizationHandler, HRManagerProbationRequirementHandler>();
 
